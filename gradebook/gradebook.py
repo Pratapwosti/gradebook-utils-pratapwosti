@@ -9,6 +9,10 @@ def curve(scores, points):
     """Return a new list of scores after adding `points` to each."""
     return [s + points for s in scores]
 def median(scores):
+    """
+    Return the median of a list of numeric values.
+    If the list is empty, return 0.0
+    """
     scores = sorted(scores)
     n = len(scores)
     if n == 0:
